@@ -9,7 +9,7 @@ $2 = the path to the reverse read fastq file
 
 $3 = the path to the barcode file with the following format:
 
-"Sample name"	"forward barcode"	"reverse barcode"	"20bp around cutsite"	"Experiment"
+"Sample name"	"forward barcode"	"reverse barcode"	"20bp centered around cutsite"	"Experiment"
 
 $4 = the path to the reference sequence, with the format:
 
