@@ -1,7 +1,10 @@
 # CHYRON1
-Code associated with "Ordered insertional mutagenesis at a single genomic site enables lineage tracing and analog recording in mammalian cells."
+Code associated with "DNA writing at a single genomic site enables lineage tracing and analog recording in mammalian cells."
 
 We used a simple wrapper to feed the necesary information into pipeline.sh:
+
+(type into the terminal: pipeline.sh $1 $2 $3 $4 $5 - what you type in might look like this:
+pipeline.sh forward.fastq reverse.fastq barcodes.txt reference.txt CHYRON1)
 
 $1 = the path to the forward read fastq file
 
@@ -9,11 +12,15 @@ $2 = the path to the reverse read fastq file
 
 $3 = the path to the barcode file with the following format:
 
-"Sample name"	"forward barcode"	"reverse barcode"	"20bp centered around cutsite"	"Experiment"
+"Sample name"	"forward barcode"	"reverse barcode"	"20bp centered around cutsite"	"Experiment name"
 
-$4 = the path to the reference sequence, with the format:
+(This file must be saved in .txt format, tab-delimited, with a line return after the last row of data.)
+
+$4 = the path to the reference sequence (the unedited recording locus), with the format:
 
 "Experiment name"	"reference sequence"
+
+(Again, this file must be saved in .txt format, tab-delimited, with a line return after the reference sequence.)
 
 $5 = The name of the experiment, for file naming purposes
 
