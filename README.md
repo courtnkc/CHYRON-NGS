@@ -3,8 +3,11 @@ Code associated with "DNA writing at a single genomic site enables lineage traci
 
 We used a simple wrapper to feed the necesary information into pipeline.sh:
 
-(type into the terminal: pipeline.sh $1 $2 $3 $4 $5 - what you type in might look like this:
-pipeline.sh forward.fastq reverse.fastq barcodes.txt reference.txt CHYRON1)
+(type into the terminal: pipeline.sh $1 $2 $3 $4 $5) 
+
+What you type in might look like this:
+
+pipeline.sh forward.fastq reverse.fastq barcodes.txt reference.txt CHYRON1
 
 $1 = the path to the forward read fastq file
 
