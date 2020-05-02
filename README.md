@@ -3,7 +3,9 @@ Code associated with "DNA writing at a single genomic site enables lineage traci
 
 We used a simple wrapper to feed the necesary information into pipeline.sh:
 
-(type into the terminal: pipeline.sh $1 $2 $3 $4 $5) 
+(type into the terminal: pipeline.sh $1 $2 $3 $4 $5)
+
+In the pipeline.sh script, line 14 should be modified to reflect whether UMIs were used.
 
 What you type in might look like this:
 
